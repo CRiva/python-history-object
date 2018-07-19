@@ -12,13 +12,11 @@ class T():
 def test_init():
     test = T("lovely")
     assert test.x == "lovely"
-    print(test.history)
     assert test.history['x'] == ["lovely"]
 
 
 def test_one_change():
     test = T("hello world")
     test.x = "bye world"
-    print(test.history)
 
     assert test.history['x'] == ["hello world", "bye world"]

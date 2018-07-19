@@ -16,6 +16,7 @@ class History():
         this = self
 
         def getter(self, attr):
+            this.start(self)
             if attr == 'history':
                 return self._history
             if attr == 'historyTrace':
