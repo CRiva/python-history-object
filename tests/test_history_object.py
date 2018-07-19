@@ -3,9 +3,9 @@ import pytest
 from history_object import HistoryObject
 
 
-class Test(HistoryObject):
+@HistoryObject()
+class Test():
     def __init__(self, x):
-        super(Test, self).__init__()
         self.x = x
 
 
