@@ -4,6 +4,20 @@ An Object implementation that tracks added and changed elements.
 
 ## Usage ##
 
+~~~python
+>>> from history_object import History
+>>> 
+>>> @History()
+>>> class T():
+>>>     def __init__(self, x):
+>>>        self.x = x
+>>>
+>>> test = T("Hello World")
+>>> test.history['x']         # ["Hello World"]
+>>> test.x = "Goodbye World"
+>>> test.history['x']         # ["Hello World", "Goodbye World"]
+~~~
+
 ## Test ##
 
 You can run the tests using [tox](https://tox.readthedocs.io/en/latest/)
