@@ -1,4 +1,6 @@
-# Code derived from https://stackoverflow.com/questions/19121446/python-object-history/19124089#19124089
+# Code derived in part from
+# https://stackoverflow.com/questions/19121446/python-object-history/19124089#19124089
+
 import datetime
 
 
@@ -6,18 +8,12 @@ class History():
     def __init__(self, *args):
         pass
 
-    # def __setattr__(self, name, value):
-    #     if self.history.get(name, False):
-    #         self.history[name].append(value)
-    #     else:
-    #         self.history[name] = [value]
-    #     self.__dict__[name] = value
+    def start(self, obj):
+        if '_history' not in obj.__dict__:
+            obj.__dict__['_history'] = {}
 
     def __call__(self, cls):
-        cls._history = {}
         this = self
-
-        print(dir(cls))
 
         def getter(self, attr):
             if attr == 'history':
@@ -28,6 +24,7 @@ class History():
         cls.__getattr__ = getter
 
         def setter(self, attr, value):
+            this.start(self)
             if self._history.get(attr, False):
                 self._history[attr].append(value)
             else:
