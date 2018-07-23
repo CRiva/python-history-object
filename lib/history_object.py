@@ -27,7 +27,10 @@ class History():
         def setter(self, attr, value):
             this.start(self)
             if self._history.get(attr, False):
-                self._history[attr].append(value)
+                if self._history[attr][-1] == value:
+                    pass
+                else:
+                    self._history[attr].append(value)
             else:
                 self._history[attr] = [value]
             self.__dict__[attr] = value
