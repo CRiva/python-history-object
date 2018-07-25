@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/CRiva/python-history-object.svg?branch=master)](https://travis-ci.org/CRiva/python-history-object)
 
+This repo lives both in [Github](https://github.com/CRiva/python-history-object) and [BitBucket](https://bitbucket.org/westmont/history_object/src/master/). 
+
 # History Object #
 
 An Object implementation that tracks added and changed elements.
