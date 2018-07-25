@@ -27,3 +27,7 @@ def test_change_to_same_value():
     test.x = "hi"  # Should not record a value getting set as the same thing.
 
     assert len(test.history['x']) == 1
+
+
+def test_intentional_failure():
+    assert False  # for travis.ci testing.
