@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/CRiva/python-history-object.svg?branch=master)](https://travis-ci.org/CRiva/python-history-object)
+
 # History Object #
 
 An Object implementation that tracks added and changed elements.
