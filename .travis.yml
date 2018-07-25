@@ -3,6 +3,6 @@ language: python
   - "2.7"
   - "3.4"
 
-install: pip install --user tox-travis
+install: pip install -r dev-requirements.txt
 
-script: tox
+script: pytest -s  --cov=history_object --cov-report=html --cov-report=term {posargs:tests/}
