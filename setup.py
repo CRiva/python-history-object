@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 
 setup(name='history-object',
       version="0.1.1",
-      description='A Object implementation that tracks added and changed elements.',
+      description='A python decorator that tracks added and changed elements of the decorated object.',
       packages=find_packages('lib'),
       package_dir={'': 'lib'},
       author='Connor Riva, Dave Lundgren',

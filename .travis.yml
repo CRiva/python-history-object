@@ -1,4 +1,7 @@
 language: generic
 
+install:
+  - pip install tox
+
 script:
   - tox
