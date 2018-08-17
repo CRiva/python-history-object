@@ -21,5 +21,5 @@ setup(name='history-object',
           'Programming Language :: Python :: 3',
       ],
       setup_requires=['setuptools-markdown'],
-      long_description_markdown_filename='README.md',
+      long_description_markdown_filename='README.md'
       )
