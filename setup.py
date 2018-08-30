@@ -5,7 +5,7 @@ from os.path import basename, splitext
 from setuptools import find_packages, setup
 
 setup(name='history-object',
-      version="0.2.1",
+      version="0.2.2",
       description='A python decorator that tracks added and changed elements of the decorated object.',
       packages=find_packages('lib'),
       package_dir={'': 'lib'},

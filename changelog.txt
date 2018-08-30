@@ -1,5 +1,12 @@
 # history_object changelog
 
+## 0.2.2
+
+### Fixed
+
+Bug where inserting None as initial value caused start value to look like [None, None] 
+negating the preventitive duplicate measures.
+
 ## 0.2.1
 
 ### Updated

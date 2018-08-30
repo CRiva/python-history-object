@@ -27,3 +27,9 @@ def test_change_to_same_value():
     test.x = "hi"  # Should not record a value getting set as the same thing.
 
     assert len(test.history['x']) == 2
+
+
+def test_multiple_none_value():
+    test = T(None)
+
+    assert test.history['x'] == [None]
