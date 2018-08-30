@@ -1,5 +1,11 @@
 # history_object changelog
 
+## 0.2.1
+
+### Updated
+
+Readme to include changes from 0.2.0
+
 ## 0.2.0
 
 ### Updated
