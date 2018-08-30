@@ -32,7 +32,7 @@ class History():
                 else:
                     self._history[attr].append(value)
             else:
-                self._history[attr] = [value]
+                self._history[attr] = [None, value]
             self.__dict__[attr] = value
             # self._history[attr] = self._history.get(attr, []) + [(datetime.datetime.now(), attr, value)]
         cls.__setattr__ = setter

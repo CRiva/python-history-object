@@ -1,5 +1,11 @@
 # history_object changelog
 
+## 0.2.0
+
+### Updated
+
+_history for a new attribute will now always start with a `None` object
+
 ## 0.1.4
 
 2018-08-26
