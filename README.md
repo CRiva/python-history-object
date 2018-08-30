@@ -17,9 +17,9 @@ An Object implementation that tracks added and changed elements.
 >>>        self.x = x
 >>>
 >>> test = T("Hello World")
->>> test.history['x']         # ["Hello World"]
+>>> test.history['x']         # [None, "Hello World"]
 >>> test.x = "Goodbye World"
->>> test.history['x']         # ["Hello World", "Goodbye World"]
+>>> test.history['x']         # [None, "Hello World", "Goodbye World"]
 ~~~
 
 ## Test ##
